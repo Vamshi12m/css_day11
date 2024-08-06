@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+      .container{
+        height: 400px;
+        width: 500px;
+        border: 1px solid ;
+        background-color: orangered;
+        box-shadow: 2px 2px 20px 10px;
+       
+      }
+      button{
+        height: 40px;
+        width: 100px;
+        border: transparent;
+        background-color: orange;
+        margin: 11px;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: 550;
+        text-shadow: 2px 1px white;
+      }
+      img{
+        margin-top: 40px;
+        margin-left: 150px;
+        
+      }
+      /* .translate{
+        transition: 30px 30px 30px;
+      } */
+      .Translate:hover ~img{
+        translate: 40px 50px;
+        background-color: rgb(255, 179, 0);
+        transition: all 1s;
+      }
+      .Rotate:hover ~img{
+        transform: rotate(360deg);
+        transition: all 3.5s;
+      }
+      .Scale:hover ~img{
+        transform: scale(2.5);
+        transition: all 1.5s;
+      }
+      .Skew:hover ~img{
+        transform: skew(180deg,190deg);
+        transition: all 3s;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <button class="Translate">Trasnlate</button>
+      <button class="Rotate">Rotate</button>
+      <button class="Scale">Scale</button>
+      <button class="Skew">Skew</button>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Nautical_star.svg/800px-Nautical_star.svg.png" width="180px" alt="">
+
+    </div>
+</body>
+</html>
